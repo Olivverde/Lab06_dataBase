@@ -19,7 +19,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.251"
-            app:srcCompat="@drawable/survey_icon" />
+            app:srcCompat="@drawable/ahegao" />
 
         <TextView
             android:id="@+id/textViewAppName"

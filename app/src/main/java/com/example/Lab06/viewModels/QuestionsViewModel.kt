@@ -1,9 +1,7 @@
-package com.example.labo5.viewmodels
+package com.example.Lab06.viewModels
 
 import android.util.Log
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.MutableLiveData
 
 
 class QuestionsViewModel: ViewModel()  {

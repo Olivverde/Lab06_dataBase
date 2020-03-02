@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.labo5.views.HomeFragment"
+        android:name="com.example.Lab06.views.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -17,12 +17,12 @@
 
     <fragment
         android:id="@+id/nav_aboutApp"
-        android:name="com.example.labo5.views.AboutFragment"
+        android:name="com.example.Lab06.views.AboutFragment"
         android:label="About App"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/answersFragment"
-        android:name="com.example.labo5.views.AnswersFragment"
+        android:name="com.example.Lab06.views.AnswersFragment"
         android:label="Questions"
         tools:layout="@layout/fragment_answers" >
         <action
@@ -31,12 +31,12 @@
     </fragment>
     <fragment
         android:id="@+id/addQuestionFragment"
-        android:name="com.example.labo5.views.AddQuestionsFragment"
+        android:name="com.example.Lab06.views.AddQuestionsFragment"
         android:label="Add Questions"
         tools:layout="@layout/fragment_add_questions" />
     <fragment
         android:id="@+id/resultsFragment"
-        android:name="com.example.labo5.views.ResultsFragment"
+        android:name="com.example.Lab06.views.ResultsFragment"
         android:label="Results"
         tools:layout="@layout/fragment_results" >
         <action

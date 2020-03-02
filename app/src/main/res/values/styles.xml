@@ -3,9 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/design_default_color_primary_variant</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="colorAccent">@color/design_default_color_primary</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -21,7 +21,7 @@
         <item name="android:padding">10dp</item>
         <item name="android:fontFamily">roboto</item>
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:background">#ec5745</item>
+        <item name="android:background">#00BCD4</item>
     </style>
     <style name="SubtitleStyle">
         <item name="android:gravity">top</item>

@@ -1,4 +1,4 @@
-package com.example.labo5.dataBase
+package com.example.Lab06.dataBase
 
 import android.content.Context
 import androidx.room.Database
@@ -16,11 +16,12 @@ abstract class dataBase : RoomDatabase() {
     companion object {
         private var INSTANCE: dataBase? = null
 
-        fun getInstance(context: Context):dataBase{
+        fun getInstance(context: Context): dataBase {
             //Call this function once at the time, waits to be free
             synchronized(this){
                 //Use a local var in order to avoid the static var
-                var instance = INSTANCE
+                var instance =
+                    INSTANCE
                 // If it's null...
                 if (instance == null){
                     instance = Room.databaseBuilder(
