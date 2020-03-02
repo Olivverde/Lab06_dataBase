@@ -1,4 +1,4 @@
-package com.example.Lab06.views
+package com.example.labo5.views
 
 
 import android.os.Bundle
@@ -10,10 +10,13 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
-import com.example.Lab06.viewModels.QuestionsViewModel
+import com.example.labo5.Factory.QuestionViewModelFactory
+import com.example.labo5.dataBase.dataBase
+import com.example.labo5.viewModels.QuestionsViewModel
 import com.example.labo5.R
-import com.example.Lab06.viewModels.ResultsViewModel
+import com.example.labo5.viewModels.ResultsViewModel
 import com.example.labo5.databinding.FragmentAnswersBinding
 import kotlinx.android.synthetic.main.fragment_answers.*
 
@@ -26,6 +29,7 @@ class AnswersFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_answers, container, false)
         binding.ratingBar.setVisibility(View.GONE)
@@ -66,7 +70,19 @@ class AnswersFragment : Fragment() {
             Log.i("RatingAnswersFragment", "SIZE DESPUES" +viewModel.getQuestionList().size)
 
             getAnswer()
+
         }
+
+        val application = requireNotNull(this.activity).application
+
+        val dataSource = dataBase.getInstance(application).sleepDatabaseDao
+        val viewModelFactory = QuestionViewModelFactory(dataSource, application)
+        val QuestionsViewModel =
+            ViewModelProviders.of(
+                this, viewModelFactory).get(QuestionsViewModel::class.java)
+        binding.questionViewModel = QuestionsViewModel
+        binding.setLifecycleOwner(this)
+
         return binding.root
     }
     //Update questions

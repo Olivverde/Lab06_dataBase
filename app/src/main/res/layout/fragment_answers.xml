@@ -2,10 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.Lab06.views.AnswersFragment">
+    tools:context="com.example.labo5.views.AnswersFragment">
 
     <data>
 
+        <variable
+            name="QuestionViewModel"
+            type="com.example.labo5.viewModels.QuestionsViewModel" />
         <variable
             name="question"
             type="String" />
@@ -13,7 +16,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
 
         <EditText

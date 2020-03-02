@@ -1,4 +1,4 @@
-package com.example.Lab06.views
+package com.example.labo5.views
 
 import android.os.Bundle
 import android.view.LayoutInflater

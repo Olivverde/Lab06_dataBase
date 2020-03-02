@@ -1,6 +1,5 @@
-package com.example.Lab06.dataBase
+package com.example.labo5.dataBase
 
-import android.renderscript.Script
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey

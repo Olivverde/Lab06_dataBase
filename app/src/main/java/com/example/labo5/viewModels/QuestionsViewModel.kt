@@ -1,10 +1,18 @@
-package com.example.Lab06.viewModels
+package com.example.labo5.viewModels
 
+import android.app.Application
 import android.util.Log
 import androidx.lifecycle.ViewModel
+import com.example.labo5.dataBase.dataBaseDao
 
 
-class QuestionsViewModel: ViewModel()  {
+class QuestionsViewModel(
+    dataSource: dataBaseDao,
+    application: Application
+) : ViewModel()  {
+
+
+
     // The list of words - the front of the list is the next word to guess
     private var addedQuestions = ArrayList<String>()
     private lateinit var questionsList: ArrayList<String>

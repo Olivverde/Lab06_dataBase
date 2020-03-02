@@ -1,4 +1,4 @@
-package com.example.Lab06.views
+package com.example.labo5.views
 
 
 import android.os.Bundle
@@ -11,7 +11,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.example.labo5.R
-import com.example.Lab06.viewModels.ResultsViewModel
+import com.example.labo5.viewModels.ResultsViewModel
 import com.example.labo5.databinding.FragmentResultsBinding
 
 /**

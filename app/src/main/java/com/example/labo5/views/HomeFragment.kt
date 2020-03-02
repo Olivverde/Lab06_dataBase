@@ -1,4 +1,4 @@
-package com.example.Lab06.views
+package com.example.labo5.views
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.labo5.R
 import com.example.labo5.databinding.FragmentHomeBinding
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding

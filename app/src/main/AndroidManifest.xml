@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.Lab06.views.MainActivity"
+            android:name=".views.MainActivity"
             android:configChanges="orientation|screenSize"
-            android:label="Survey App"
+            android:label="Survey Uhgg"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
